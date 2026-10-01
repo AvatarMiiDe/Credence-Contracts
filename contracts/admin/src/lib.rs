@@ -2182,4 +2182,4 @@ mod test_reactivate_admin_boundaries;
 mod test_concurrency_race_safety;
 
 #[cfg(test)]
-mod test_add_admin_failure_boundaries;
+mod test_get_all_admins_failure_boundary;
