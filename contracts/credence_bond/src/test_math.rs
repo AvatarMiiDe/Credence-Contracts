@@ -51,6 +51,8 @@ fn test_bps_u64_boundaries() {
     assert_eq!(math::bps_u64(0, 10_000, "mul", "div"), 0);
     // 0 bps
     assert_eq!(math::bps_u64(10_000, 0, "mul", "div"), 0);
+    // Max amount with 0 bps
+    assert_eq!(math::bps_u64(u64::MAX, 0, "mul", "div"), 0);
 }
 
 // --- add_i128 ---
